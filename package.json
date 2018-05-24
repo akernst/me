@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "Rum Ham",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -21,8 +21,13 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "jquery": "^3.3.1",
+    "ng2-image-hover-zoom": "^1.0.2",
     "rxjs": "^5.5.6",
+    "typescript": "^2.6.2",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
@@ -42,7 +47,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
-    "tslint": "~5.9.1",
-    "typescript": "~2.5.3"
+    "tslint": "~5.9.1"
   }
 }

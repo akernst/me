@@ -1,0 +1,12 @@
+#bar {
+	color: black;
+	background-color: black;
+	height: 10px;
+	width: 30%;
+	max-height: 10px;
+	max-width: 30%;
+	display: block;
+	position: relative;
+	border-radius: 6px;
+	margin: auto;
+}
