@@ -1,0 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+
+<div class="expand pointer">
+	<img class="img img-rounded img-responsive align-middle" [src]='url' (click)='launchModal()'>
+	<!-- <img src='{{imageJSON.source}}'> -->
+	<!-- Above Line does the same thing -->
+	<span class="middle">
+		<span class="img-text" style="font-family:'Forum',cursive;" (click)='launchModal()'>{{title}}</span>
+	</span>
+</div>
+
+<div *ngIf='showModal'>
+	<image-modal [src]='url' (notify)='toggleModal($event)'></image-modal>
+</div>

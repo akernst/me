@@ -1,0 +1,16 @@
+.custom-flex {
+	display:flex;
+	justify-content:center;
+	padding:25px;
+}
+
+.center-image {
+	display: flex;
+  	flex-direction: column;
+ 	justify-content: center;
+}
+
+.grid-size-restraint {
+	max-width:80%;
+	margin:auto;
+}

@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="grid-size-restraint">
+    <div class="row pb-15 custom-flex" *ngFor='let p of images'>
+      <div class="col-md-4 center-image" *ngFor='let i of p'>
+        <image-panel [imageJSON]='i'></image-panel>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 // Declarations
 import { AppComponent } from './app.component';
+import { ArtComponent } from './art/art.component';
 import { ImageGridTableComponent } from './image-grid-table/image-grid-table.component';
 import { ImageModalComponent } from './image-modal/image-modal.component';
 import { ImagePanelComponent } from './image-panel/image-panel.component';
@@ -20,13 +21,15 @@ import { ImageService } from './ImageService/image.service';
     HttpClientModule,
     NgbModule.forRoot(),
     RouterModule.forRoot([
-    	{path: 'art', component: PageNotFoundComponent},
-    	//{path: '', redirectTo: '', pathMatch: 'full'},
+      {path: 'art', component: ArtComponent},
+      {path: 'music', component: PageNotFoundComponent},
+    	{path: '', redirectTo: '/', pathMatch: 'full'},
     	{path: '**', component: PageNotFoundComponent }
     ])
   ],
   declarations: [
     AppComponent,
+    ArtComponent,
     ImageGridTableComponent,
     ImageModalComponent,
     ImagePanelComponent,
